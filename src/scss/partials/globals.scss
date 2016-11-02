@@ -1,0 +1,109 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: $font-family-main;
+	color: $copy-color;
+	background: $site-background;
+	font-size: $font-size;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+a{
+	color: $link-color;
+	//text-decoration: none;
+
+	&:hover{
+		color: $link-color-hover;
+		//text-decoration: none;
+	}
+
+	&:visited{
+		color: $link-color;
+		//text-decoration: none;
+	}
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+}
+
+li{
+	list-style: none;
+}
+
+h1, h2, h3{
+	font-family: $font-family-header;
+}
+
+#content{
+	padding: $content-padding;
+}
+
+.btn{
+	border-radius: $btn-border-radius;
+	text-decoration: none;
+	padding: $btn-padding;
+	font-size: $btn-font-size;
+
+	color: $btn-color;
+	background: $btn-background-color;
+
+	border: $btn-border-size solid $btn-border-color;
+
+	&:hover{
+		color: $btn-color-hover;
+		background: $btn-background-color-hover;
+		@include background-image(linear-gradient(to bottom, $site-gradient1, $site-gradient2));
+		border: $btn-border-size solid $btn-border-color-hover;
+	}
+
+	&.btn-dark{
+		color: $btn-color-dark;
+		border: $btn-border-size solid $btn-border-color-dark;
+		@include background-image(linear-gradient(to bottom, $site-gradient1, $site-gradient2));
+
+		&:hover{
+			color: $btn-color-dark-hover;
+			background: $btn-background-color-dark-hover;
+			border: $btn-border-size solid $btn-border-color-dark-hover;
+		}
+	}
+}
+
+.bloglovin{
+	width: $menu-social-font-size;
+	height: $menu-social-font-size;
+	position: relative;
+	top: 2px;
+
+	a{
+		svg{
+			fill: currentColor;
+		}
+	}
+}
+
+.center{
+	text-align: center;
+}
+
+.search-group{
+	text-align: center;
+	margin: 50px 0;
+
+	.search-field{
+		margin: 0 15px;
+		border-radius: 0px;
+		padding: 19px 15px;
+		width: 300px;
+	}
+}
+
+.clear {
+	clear: both;
+}

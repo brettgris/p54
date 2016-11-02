@@ -1,0 +1,36 @@
+<header class="container-fluid" id="header">
+	<div class="logo">
+		<a href="/">
+			<img src="images/header/logo.jpg" class="img img-responsive"/>
+		</a>
+	</div>
+	<div id="menu" class="menu">
+		<!-- CATEGORIES -->
+		<ul class="categories">
+			@@loop('header/cat.html','data/cats.json')
+		</ul>
+
+		<!-- SPACER -->
+		<div class="spacer hidden-xs">
+			<i class="fa fa-heart"></i>
+		</div>
+
+		<!-- SEARCH -->
+		<ul class="search hidden-xs">
+			@@include('header/search.html')
+		</ul>
+
+		<!-- SPACER -->
+		<div class="spacer hidden-xs hidden-sm">
+			<i class="fa fa-heart"></i>
+		</div>
+
+		<!-- SOCIAL -->
+		<ul class="social hidden-xs hidden-sm">
+			@@loop('header/social.html','data/social.json')
+			@@include('header/bloglovin.html')
+		</ul>
+
+	</div>
+	<div id="menu-waypoint"></div>
+</header>

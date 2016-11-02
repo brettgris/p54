@@ -1,0 +1,223 @@
+.posts{
+	padding: $post-list-padding;
+
+	.page-header{
+		text-align: center;
+		margin: 0 0 40px 0;
+		border: none;
+
+		h1{
+			font-size: 21px;
+			letter-spacing: 1px;
+			font-weight: 300;
+
+			span, &.category-title, &.search-title{
+				display:block;
+				font-size: 26px;
+				font-weight: 700;
+				letter-spacing: 2px;
+				text-transform: uppercase;
+
+			}
+		}
+
+		ul.subcategories{
+			text-align: center;
+			margin-top: 30px;
+
+			li{
+				margin-right: 10px;
+				margin-bottom: 10px;
+				display: inline-block;
+
+				&:last-child{
+					margin-right: 0px;
+				}
+
+				a{
+					color: $black;
+					text-decoration: none;
+					font-size: 14px;
+					letter-spacing: 1px;
+					text-transform: uppercase;
+					font-weight: 500;
+					border: 1px solid transparent;
+					padding: 10px 20px;
+
+					&:hover{
+						color: $black;
+						border: 1px solid #ccc;
+					}
+				}
+
+				&.selected{
+					a{
+						border: 1px solid #ccc;
+					}
+				}
+			}
+		}
+	}
+
+	.post {
+		margin-bottom: $post-list-spacing-bottom;
+
+		.flex{
+			@include display-flex;
+			@include align-items(center);
+
+			@media #{$x-small}{
+				display: block;
+			}
+		}
+
+		&:nth-child(even){
+			.flex{
+				@include flex-direction(row-reverse);
+			}
+		}
+
+		&:nth-child(odd){
+			.flex{
+				@include flex-direction(row);
+			}
+		}
+
+		&:last-child{
+			margin-bottom: 0px;
+		}
+
+		.image{
+			position: relative;
+
+			.content{
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 0;
+				left: 0;
+				padding: 0px;
+				visibility: hidden;
+
+				@include transition-property(padding);
+				@include transition-duration($post-list-image-hover-speed-border);
+
+				.wrapper{
+					position: relative;
+					width: 100%;
+					height: 100%;
+					border: $post-list-image-border-size solid $post-list-image-border-color;
+					@include opacity(.01);
+
+					@include transition-property(opacity);
+					@include transition-duration($post-list-image-hover-speed-opacity);
+
+					@include display-flex;
+					@include align-items(center);
+					@include justify-content(center);
+
+					.btn{
+						@include box-shadow(0px 0px $post-list-image-btn-shadow-distance $post-list-image-btn-shadow-color);
+					}
+				}
+			}
+
+			&:hover{
+				.content{
+					visibility: visible;
+					padding: $post-list-image-border-padding;
+
+					.wrapper{
+						@include opacity(1);
+					}
+				}
+			}
+		}
+
+		.copy{
+			text-align: center;
+
+			@media #{$x-small}{
+				margin-top: 30px;
+			}
+
+			ul.category{
+				margin: 0 auto 15px auto;
+				@include display-flex;
+				@include align-items(center);
+				@include justify-content(center);
+
+				li{
+					display: block;
+					margin-right: 10px;
+
+					&:last-child{
+						margin-right: 0px;
+					}
+
+					a{
+						width: $post-list-cat-width;
+						height: $post-list-cat-height;
+						border-radius: $post-list-cat-border-radius;
+						color: $post-list-cat-color;
+						text-decoration: none;
+
+						@include background-image(linear-gradient(to bottom, $site-gradient1, $site-gradient2));
+
+						@include display-flex;
+						@include align-items(center);
+						@include justify-content(center);
+
+						&:hover{
+							color: $post-list-cat-color;
+						}
+					}
+				}
+			}
+
+			h3{
+				text-transform: $post-list-title-text-transform;
+				font-weight: $post-list-title-font-weight;
+				font-size: $post-list-title-font-size;
+				letter-spacing: $post-list-title-letter-spacing;
+				margin: 0;
+
+				a{
+					text-decoration: none;
+					color: $black;
+				}
+			}
+
+			h6{
+				color: $site-color2;
+			}
+		}
+	}
+
+	.wp-pagenavi{
+		padding: $paging-padding;
+		text-align: center;
+
+		@media #{$x-small}{
+			padding-bottom: 0px;
+		}
+
+		span, a{
+			border: $paging-link-border-size solid $paging-link-border-color;
+			padding: $paging-link-padding;
+			color: $paging-link-color;
+			background: $paging-link-background;
+			text-decoration: none;
+			display: inline-block;
+			margin-bottom: $paging-link-margin-bottom;
+			font-size: 16px;
+			letter-spacing: 1.2px;
+		}
+
+		a:hover, span.current{
+			background: $paging-link-background-hover;
+			color: $paging-link-color-hover;
+			border: $paging-link-border-size solid $paging-link-border-hover;
+		}
+	}
+}

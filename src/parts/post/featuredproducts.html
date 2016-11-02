@@ -1,0 +1,11 @@
+<div class="featured section">
+	<h6>Featured in this post:</h6>
+	<ul class="text">
+		@@loop('post/textlink.html','data/products.json')
+	</ul>
+	<div class="products">
+		<ul class="images row">
+			@@loop('post/imagelink.html', 'data/products.json')
+		</ul>
+	</div>
+</div>

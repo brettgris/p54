@@ -1,0 +1,83 @@
+/****************
+LOGO
+****************/
+
+//-----SIZE-----//
+$logo-width: 400px;
+$logo-margin-top: 35px;
+$logo-margin-bottom: 35px;
+
+/****************
+MENU
+****************/
+
+//-----SIZE-----//
+$menu-padding-bottom: 10px;
+
+//-----COLOR-----//
+$menu-background: $white;
+$menu-font-color: $black;
+$menu-font-color-hover: $site-color2;
+$menu-font-color-selected: $site-color2;
+
+//-----BORDERS-----//
+$menu-border-radius: 0px;
+$menu-border: 1px solid $light-grey;
+
+//-----FONT-----//
+$menu-link-font-size: 14px;
+$menu-link-font-weight: 500;
+$menu-link-letter-spacing: 1px;
+
+/****************
+STICKY
+****************/
+
+//-----SIZE-----//
+$menu-sticky-height: 50px;
+$menu-sticky-shadow-distance: 10px;
+//-----COLORS-----//
+$menu-sticky-shadow-color: rgba(0,0,0,.3);
+
+
+/****************
+SECTIONS
+****************/
+
+//-----SIZES-----//
+$menu-section-spacing: 25px;
+
+/****************
+CATEGORIES
+****************/
+
+//-----SIZS-----//
+$menu-category-spacing: 10px;
+
+/****************
+SEARCH
+****************/
+
+//-----SIZS-----//
+$menu-search-label-font-size: 12px;
+$menu-search-label-margin-right: 5px;
+$menu-search-width-off: 0px;
+$menu-search-width-on: 200px;
+
+/****************
+SOCIAL
+****************/
+
+//-----SIZS-----//
+$menu-social-spacing: 7px;
+$menu-social-font-size: 14px;
+
+/****************
+SPACER
+****************/
+
+//-----SIZS-----//
+$menu-spacer-font-size: 8px;
+
+//-----COLOR-----//
+$menu-spacer-color: $light-grey;

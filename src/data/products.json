@@ -1,0 +1,34 @@
+[
+	{
+		"name": "Moto Jacket",
+		"image": "images/post/jacket.jpg",
+		"link": "http://www.anthropologie.com/anthro/product/clothes-jackets-jacket/4115202155206.jsp",
+		"retailer": "Anthropologie",
+		"brand": "Faravel"
+	},{
+		"name": "Chunky Knit Beanie",
+		"image": "images/post/beanie.jpg",
+		"link": "https://www.freepeople.com/shop/back-to-basics-chunky-knit-beanie/",
+		"retailer": "Free People",
+		"brand": "Free People"
+
+	},{
+		"name": "Lace Up Pullover Sweater",
+		"image": "images/post/sweater.jpg",
+		"link": "https://www.francescas.com/product/gayle-lace-up-pullover-sweater.do",
+		"retailer": "Francesca's",
+		"brand": "Gayle"
+	},{
+		"name": "Autumn Plaid Scarf",
+		"image": "images/post/scarf.jpg",
+		"link": "http://shop.nordstrom.com/s/bp-autumn-plaid-scarf/4035981",
+		"retailer": "Nordstrom",
+		"brand": "BP"
+	},{
+		"name": "Penelope Boot",
+		"image": "images/post/boot.jpg",
+		"link": "https://www.shopbop.com/penelope-boot-splendid/vp/v=1/1538570045.htm",
+		"retailer": "Shopbop",
+		"brand": "Splendid"
+	}
+]

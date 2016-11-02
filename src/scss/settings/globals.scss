@@ -1,0 +1,66 @@
+/****************
+SITE
+****************/
+
+//-----SIZE-----//
+$content-padding: 50px 0px;
+
+//-----COLOR-----//
+$site-background: $white;
+
+//-----COLOR-----//
+
+/****************
+TYPE
+****************/
+
+//-----SIZE-----//
+$copy-color: $black;
+
+//-----COLOR-----//
+$link-color: $site-color1;
+$link-color-hover: $site-color2;
+
+//-----FONT-----//
+$font-size: 18px;
+
+
+/****************
+BTN
+****************/
+
+//-----SIZE-----//
+$btn-padding: 10px 25px;
+
+//-----COLOR-----//
+$btn-background-color: $white;
+$btn-background-color-hover: $site-gradient1;
+$btn-background-color-dark: $site-gradient2;
+
+$btn-color: $site-gradient2;
+$btn-color-hover: $white;
+$btn-color-dark: $white;
+
+//-----BORDER-----//
+$btn-border-size: 1px;
+$btn-border-color: $site-gradient2;
+$btn-border-color-hover: $white;
+$btn-border-radius: 0px;
+
+//-----FONT-----//
+$btn-font-size: 13px;
+
+
+/****************
+BTN-DARK
+****************/
+
+//-----COLOR-----//
+$btn-background-color-dark: $site-gradient2;
+$btn-background-color-dark-hover: $site-gradient1;
+$btn-color-dark: $white;
+$btn-color-dark-hover: $white;
+
+//-----BORDER-----//
+$btn-border-color-dark: $white;
+$btn-border-color-dark-hover: $white;

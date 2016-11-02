@@ -1,0 +1,36 @@
+/****************
+CATEGORY HEADER
+****************/
+
+//-----SIZE-----//
+$cat-header-padding: 0 0 20px 0;
+
+/****************
+TITLE
+****************/
+
+//-----FONT-----//
+$cat-title-font-size: 36px;
+$cat-title-font-weight: 700;
+$cat-title-letter-spacing: 3px;
+$cat-title-text-transform: uppercase;
+
+/****************
+LINKS
+****************/
+
+//-----SIZE-----//
+$cat-sublinks-padding-top: 10px;
+$cat-sublinks-spacing: 20px;
+$cat-sublinks-padding: 10px 20px;
+
+//-----BORDER-----//
+$cat-sublinks-border-size: 1px;
+$cat-sublinks-border-color: transparent;
+$cat-sublinks-border-color-hover: $light-grey;
+
+//-----FONT-----//
+$cat-sublinks-font-size: $menu-link-font-size;
+$cat-sublinks-font-weight: $menu-link-font-weight;
+$cat-sublinks-letter-spacing: $menu-link-letter-spacing;
+$cat-sublinks-text-transform: uppercase;

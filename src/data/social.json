@@ -1,0 +1,23 @@
+[
+	{
+		"name": "instagram",
+		"link": "https://www.instagram.com/placefiftyfour/",
+		"class": "fa-instagram"
+	},{
+		"name": "pinterest",
+		"link": "https://www.pinterest.com/placefiftyfour/",
+		"class": "fa-pinterest-p"
+	},{
+		"name": "twitter",
+		"link": "https://www.twitter.com/placefiftyfour/",
+		"class": "fa-twitter"
+	},{
+		"name": "facebook",
+		"link": "https://www.facebook.com/placefiftyfour/",
+		"class": "fa-facebook"
+	},{
+		"name": "snapchat",
+		"link": "https://www.snapchat.com/placefiftyfour/",
+		"class": "fa-snapchat-ghost"
+	}
+]

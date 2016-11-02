@@ -1,0 +1,35 @@
+[
+	{
+		"title": "Cascading Crystal Light Fixture",
+		"date": "October 5, 2016",
+		"category": "fa-home",
+		"image": "2.jpg",
+		"desc": "This is one of our greatest finds! We are so in love with this cascading crystal light fixture, that is now hanging and sparkling in our guest bedroom. It is so elegant and brings such a luxurious feel to to the room, and for a super affordable price! Click on the link or the image below to shop this ",
+		"push": "",
+		"pull": ""
+	},{
+		"title": "Cozy Sweaters and Coffee",
+		"date": "October 4, 2016",
+		"category": "fa-shopping-bag",
+		"image": "1.jpg",
+		"desc": "There is nothing better than cozy sweaters and coffee on a chilly day! This lace-up sweater is so cute and comfy and it has nice, relaxed fit. To go along with it is our favorite Paris mug! While we all can’t be at PFW, it is a nice way to enjoy some Paris nostalgia at home. Shop these",
+		"push": "col-sm-push-6",
+		"pull": "col-sm-pull-6"
+	},{
+		"title": "Midi Skirt and Knee High Boots",
+		"date": "October 3, 2016",
+		"category": "fa-cutlery",
+		"image": "3.jpg",
+		"desc": "Now that the temperatures are starting to drop, a midi skirt paired with tall boots is a chic way to keep those legs warm but still wear a skirt when it’s cool outside. We love this gold-rust color skirt with pleats for fall and the wrap around straps on these knee high boots are absolutely stunning",
+		"push": "",
+		"pull": ""
+	},{
+		"title": "Autumn Adventure in Evergreen, Colorado",
+		"date": "October 2, 2016",
+		"category": "fa-plane",
+		"image": "4.jpg",
+		"desc": "A few items we took along on our trip to the mountains… An adorable, slouchy knit beanie in burnt orange-cranberry is a must-have in the mountains, along with this comfortable light-weight moto jacket (click on these links to shop each item). More suggestions and favorite looks we love",
+		"push": "col-sm-push-6",
+		"pull": "col-sm-pull-6"
+	}
+]

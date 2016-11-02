@@ -1,0 +1,75 @@
+/****************
+POST LIST
+****************/
+
+	//-----SIZE-----//
+	$post-list-padding: 0px 0px;
+
+	/****************
+	POST
+	****************/
+
+		//-----SIZE-----//
+		$post-list-spacing-bottom: 75px;
+
+		/****************
+		IMAGE
+		****************/
+
+			//-----BORDER-----//
+			$post-list-image-border-padding: 12px;
+			$post-list-image-border-size: 1px;
+			$post-list-image-border-color: $site-background;
+
+			//-----TRANSITION-----//
+			$post-list-image-hover-speed-border: .5s;
+			$post-list-image-hover-speed-opacity: 1s;
+
+			//-----SHADOW-----//
+			$post-list-image-btn-shadow-distance: 30px;
+			$post-list-image-btn-shadow-color: rgba(0,0,0,.3);
+
+		/****************
+		CATEGORY
+		****************/
+
+			//-----SIZE-----//
+			$post-list-cat-width: 30px;
+			$post-list-cat-height: $post-list-cat-width;
+
+			//-----COLOR-----//
+			$post-list-cat-color: $white;
+
+			//-----BORDER-----//
+			$post-list-cat-border-radius: 50%;
+
+		/****************
+		TITLE
+		****************/
+
+			//-----FONT-----//
+			$post-list-title-font-size: 24px;
+			$post-list-title-font-weight: 700;
+			$post-list-title-letter-spacing: 1px;
+			$post-list-title-text-transform: uppercase;
+
+
+	/****************
+	PAGING
+	****************/
+
+		//-----SIZES-----//
+		$paging-padding: 15px 0 15px 0;
+		$paging-link-padding: 7px 15px;
+		$paging-link-margin-bottom: 10px;
+
+		//-----COLOR-----//
+		$paging-link-color: $black;
+		$paging-link-color-hover: $white;
+		$paging-link-background: $white;
+		$paging-link-background-hover: $site-gradient2;
+
+		//-----BORDER-----//
+		$paging-link-border-size: 1px;
+		$paging-link-border-color: $light-grey;
+		$paging-link-border-hover: $site-gradient2;

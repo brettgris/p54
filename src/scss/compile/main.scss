@@ -1,0 +1,27 @@
+@import "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css";
+
+@import "compass/css3";
+
+$imgPath: "../images/";
+
+@import "../includes/lightslider.scss";
+
+/************************************SETTINGS**********************************/
+@import "../settings/_colors.scss";
+@import "../settings/_mediaqueries.scss";
+@import "../settings/_fonts.scss";
+
+@import "../settings/globals.scss";
+@import "../settings/header.scss";
+@import "../settings/posts.scss";
+@import "../settings/footer.scss";
+@import "../settings/category.scss";
+@import "../settings/post.scss";
+
+/************************************PARTIALS**********************************/
+@import "../partials/globals.scss";
+@import "../partials/header.scss";
+@import "../partials/posts.scss";
+@import "../partials/footer.scss";
+@import "../partials/category.scss";
+@import "../partials/post.scss";

@@ -1,0 +1,25 @@
+<footer>
+	<div class="container">
+
+
+		<!-- LINKS -->
+		<ul class="links">
+			<li><a href="#">About</a></li>
+			<li><a href="#">Contact</a></li>
+		</ul>
+
+		<!-- SPACER -->
+		<div class="spacer hidden-xs">
+			<i class="fa fa-heart"></i>
+		</div>
+
+		<!-- SOCIAL -->
+		<ul class="social">
+			@@loop('header/social.html','data/social.json')
+			@@include('header/bloglovin.html')
+		</ul>
+
+		<!-- COPYRIGHT -->
+		<p class="copyright">&copy; 2016 Place Fifty Four</p>
+	</div>
+</footer>

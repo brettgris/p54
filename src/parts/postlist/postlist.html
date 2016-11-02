@@ -1,0 +1,8 @@
+<div class="posts container">
+	<div class="row">
+		<div class="col-sm-12">
+			@@loop('postlist/post.html','data/posts.json')
+		</div>
+	</div>
+	@@include('postlist/paging.html')
+</div>

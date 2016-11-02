@@ -1,0 +1,225 @@
+header{
+	.logo{
+		width: $logo-width;
+		margin: $logo-margin-top auto $logo-margin-bottom auto;
+
+		@media (max-width: $logo-width){
+			width: 100% !important;
+		}
+	}
+
+	.menu{
+		background: $menu-background;
+		border-radius: $menu-border-radius;
+		border-bottom: $menu-border;
+		padding-bottom: $menu-padding-bottom;
+
+		top: -1 * $menu-sticky-height;
+		@include transition-property(top);
+		@include transition-duration(.3s);
+		@include transition-timing-function(ease-in);
+
+		@include display-flex;
+		@include align-items(center);
+		@include justify-content(center);
+
+		ul{
+			text-align: center;
+			margin-right: $menu-section-spacing;
+			color: $menu-font-color;
+
+			&:last-child{
+				margin-right: 0px;
+			}
+
+			li{
+				display: inline-block;
+
+				a{
+					text-transform: uppercase;
+					text-decoration: none;
+					font-size: $menu-link-font-size;
+					font-weight: $menu-link-font-weight;
+					letter-spacing: $menu-link-letter-spacing;
+					color: $menu-font-color;
+
+					@include transition-property(color);
+					@include transition-duration(.3s);
+
+
+
+					&:hover{
+						color: $menu-font-color-hover;
+					}
+
+
+					&.selected{
+						color: $menu-font-color-selected;
+
+						&:hover{
+							color: $menu-font-color-selected;
+						}
+					}
+				}
+			}
+
+			&.categories{
+				@media #{$x-small}{
+					margin-right: 0px;
+				}
+
+				li{
+					margin-right: $menu-category-spacing;
+
+					&:last-child{
+						margin-right: 0;
+					}
+
+					a{
+						position: relative;
+						overflow: hidden;
+
+						&::after{
+							content: "";
+							position: absolute;
+							display: block;
+							visibility: hidden;
+							background: $menu-font-color-hover;
+							width:100%;
+							height: 3px;
+							top: $menu-link-font-size*2+5;
+							left:0;
+							@include opacity(.01);
+
+							@include transition-property(top,opacity);
+							@include transition-duration(.3s);
+						}
+
+						&:hover, &.selected{
+							&::after{
+								visibility: visible;
+								@include opacity(.7);
+								top: $menu-link-font-size+5;
+							}
+						}
+					}
+				}
+			}
+
+			&.search{
+				@media #{$small}{
+					margin-right: 0px;
+				}
+
+				li{
+					label{
+
+						font-size: $menu-search-label-font-size;
+						margin-top: 2px;
+					}
+					input{
+						background: transparent;
+						border: none;
+						outline: none;
+						width: $menu-search-width-off;
+						color: $menu-font-color-hover;
+						padding: 0;
+
+						@include transition-property(width, margin-left);
+						@include transition-duration(.3s);
+						@include transition-timing-function(ease-out);
+
+						@include box-shadow(none);
+
+						@include input-placeholder {
+							color: $menu-font-color;
+						}
+
+						@media #{$small}{
+							margin-left: $menu-search-label-margin-right;
+							width: $menu-search-width-on;
+							border: 1px solid $light-grey;
+							padding: 0 10px;
+						}
+
+						&:focus{
+							outline: none !important;
+							margin-left: $menu-search-label-margin-right;
+							width: $menu-search-width-on;
+						}
+					}
+
+					&:hover{
+						input{
+							margin-left: $menu-search-label-margin-right;
+							width: $menu-search-width-on;
+						}
+					}
+				}
+			}
+
+			&.social{
+				position: relative;
+
+				li{
+					margin-right: $menu-social-spacing;
+
+					&:last-child{
+						margin-right: 0;
+					}
+
+					a{
+						font-size: $menu-social-font-size;
+					}
+				}
+			}
+		}
+
+		div.spacer{
+			font-size: $menu-spacer-font-size;
+			margin-right: $menu-section-spacing;
+			color: $menu-spacer-color;
+		}
+
+		ul.home, div.home-spacer{
+			display: none;
+		}
+
+		&.sticky{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			z-index: 10;
+			background: $menu-background;
+			height: $menu-sticky-height;
+			border-bottom: none;
+			padding-bottom: 0px;
+			@include box-shadow(0px 0px $menu-sticky-shadow-distance $menu-sticky-shadow-color);
+
+			ul.home, div.home-spacer{
+				display: block;
+			}
+		}
+	}
+
+	#menu-waypoint{
+		margin-top: 0px;
+
+		&.sticky{
+			margin-top: 50px;
+		}
+	}
+}
+
+.admin-bar .menu.sticky {
+	top: 32px;
+
+	@media (max-width: 782px){
+		top: 46px;
+	}
+
+	@media (max-width: 600px){
+		top: 0;
+	}
+}
